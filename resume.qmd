@@ -1,89 +1,81 @@
 ---
 layout: cv
-title: Isaac Newtons's CV
+title: Levi Mackay's CV
 ---
-# Isaac Newton
-Physicist, Mathematician, Cambridge professor.
+# Levi Mackay
+Computer Science Student, Software Developer, Computer Vision & Data Engineering
 
 <div id="webaddress">
-<a href="isaac@applesdofall.org">isaac@applesdofall.org</a>
-| <a href="http://en.wikipedia.org/wiki/Isaac_Newton">My wikipedia page</a>
+<a href="mailto:mac21048@byui.edu">mac21048@byui.edu</a> | 208-284-4004
+| <a href="https://www.linkedin.com/in/levi-mackay-217380396">My LinkedIn page</a>
 </div>
 
 
-## Currently
+## Summary
 
-Standing on the shoulders of giants
-
-### Specialized in
-
-Laws of motion, gravitation, minting coins, disliking [Robert Hooke](http://en.wikipedia.org/wiki/Robert_Hooke)
-
-
-### Research interests
-
-Cooling, power series, optics, alchemy, planetary motions, apples.
+Computer Science student at Brigham Young University-Idaho with a 4.0 GPA and strong foundations in Python, JavaScript, C#, and SQL. Experienced in data management, problem solving, and process improvement through technical and operational roles. Seeking a software development or technology-focused internship where I can apply programming, analytical thinking, and real-world problem solving to build meaningful solutions.
 
 
 ## Education
 
-`1654-1660`
-__The King's School, Grantham.__
+`September 2024 - Present`
+__Brigham Young University-Idaho__, Rexburg, ID
 
-`June 1661 - now`
-__Trinity College, Cambridge__
-
-- Sizar
-
-`1667 - death`
-__Trinity College, Cambridge__
-
-- Fellow
+- Bachelor of Science: Computer Science
+- GPA: 4.0
+- Minor: World Languages | Certificate: Computer Programming
+- Relevant Coursework: Data Structures, Object-Oriented Programming, Databases, Web Development
 
 
+## Experience
 
-## Awards
+`May 2026 - Present`
+__Software Developer / Founder__, Sandbox, Rexburg, ID
 
-`2012`
-President, *Royal Society*, London, UK
+`2024 - 2025`
+__Customer Service Representative__, SafeStreets USA, Rexburg, ID
 
-Associate, *French Academy of Science*, Paris, France
+- Managed large datasets and customer records with high accuracy
+- Administered system permissions and user access across internal platforms
+- Identified and resolved account and system discrepancies through cross-team coordination
+- Streamlined workflow processes to improve operational efficiency
 
+`June 2024 - April 2026`
+__Lift Operations Assistant__, Kelly Canyon Ski Resort, Kelly Canyon, ID
 
+- Operated ski lifts efficiently and safely, ensuring smooth operations and a positive guest experience
+- Provided assistance to skiers and snowboarders, ensuring their safety and comfort
+- Conducted routine safety checks on lift equipment and reported any malfunctions
+- Assisted with crowd control and maintained a clean, organized work area
 
-## Publications
+`June 2020 - June 2022`
+__Farm Hand__, Mackay Farms, Mountain Home, ID
 
-<!-- A list is also available [online](http://scholar.google.co.uk/citations?user=LTOTl0YAAAAJ) -->
+- Assisted in the preparation of soil for planting by tilling and plowing fields
+- Cared for livestock, including feeding, watering, and providing medical attention when necessary
+- Harvested crops according to season and maintained records of yields
+- Maintained farm equipment such as tractors, harvesters, and other machinery
+- Monitored weather conditions to ensure optimal planting times
 
-### Journals
+`June 2020 - July 2022`
+__Landscape Foreman__, Yard Brothers Landscaping, Mountain Home, ID
 
-`1669`
-Newton Sir I, De analysi per æquationes numero terminorum infinitas. 
-
-`1669`
-Lectiones opticæ.
-
-etc. etc. etc.
-
-### Patents
-
-`2012`
-Infinitesimal calculus for solutions to physics problems, [SMBC](http://www.techdirt.com/articles/20121011/09312820678/if-patents-had-been-around-time-newton.shtml) patent 001
-
-
-## Occupation
-
-`1600`
-__Royal Mint__, London
-
-- Warden
-- Minted coins
-
-`1600`
-__Lucasian professor of Mathematics__, Cambridge University
-
+- Managed planting, mulching, and edging of all landscape areas
+- Organized and scheduled crews for efficient completion of projects
+- Provided direction to crew members to ensure safety regulations were followed
+- Inspected landscapes after installation to ensure quality standards were met
+- Assisted in the selection of plants, shrubs, trees, and other materials for landscaping projects
+- Ensured proper maintenance of equipment and tools used by crews
 
 
-<!-- ### Footer
+## Technical Skills
 
-Last updated: May 2013 -->
+- __Programming:__ Python, JavaScript, C#, SQL
+- __Web:__ HTML, CSS
+- __Tools:__ Git (basic), VS Code, Excel, Data Entry Systems
+- __Concepts:__ Data Structures (intro), Object-Oriented Programming, Debugging, Data Analysis
+
+
+## Languages
+
+Croatian - Professional, Serbian - Professional, Bosnian - Professional, Montenegrin - Professional

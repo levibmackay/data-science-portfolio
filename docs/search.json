@@ -1,131 +1,5 @@
 [
   {
-    "objectID": "story_telling.html",
-    "href": "story_telling.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Story Telling"
-    ]
-  },
-  {
-    "objectID": "story_telling.html#title-2-header",
-    "href": "story_telling.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Story Telling"
-    ]
-  },
-  {
-    "objectID": "Story_Telling/project2.html",
-    "href": "Story_Telling/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Story Telling",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "Physicist, Mathematician, Cambridge professor.\n\nisaac@applesdofall.org | My wikipedia page\n\n\n\nStanding on the shoulders of giants\n\n\nLaws of motion, gravitation, minting coins, disliking Robert Hooke\n\n\n\nCooling, power series, optics, alchemy, planetary motions, apples.\n\n\n\n\n1654-1660 The King’s School, Grantham.\nJune 1661 - now Trinity College, Cambridge\n\nSizar\n\n1667 - death Trinity College, Cambridge\n\nFellow\n\n\n\n\n2012 President, Royal Society, London, UK\nAssociate, French Academy of Science, Paris, France\n\n\n\n\n\n\n1669 Newton Sir I, De analysi per æquationes numero terminorum infinitas.\n1669 Lectiones opticæ.\netc. etc. etc.\n\n\n\n2012 Infinitesimal calculus for solutions to physics problems, SMBC patent 001\n\n\n\n\n1600 Royal Mint, London\n\nWarden\nMinted coins\n\n1600 Lucasian professor of Mathematics, Cambridge University"
-  },
-  {
-    "objectID": "resume.html#currently",
-    "href": "resume.html#currently",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "Standing on the shoulders of giants\n\n\nLaws of motion, gravitation, minting coins, disliking Robert Hooke\n\n\n\nCooling, power series, optics, alchemy, planetary motions, apples."
-  },
-  {
-    "objectID": "resume.html#education",
-    "href": "resume.html#education",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "1654-1660 The King’s School, Grantham.\nJune 1661 - now Trinity College, Cambridge\n\nSizar\n\n1667 - death Trinity College, Cambridge\n\nFellow"
-  },
-  {
-    "objectID": "resume.html#awards",
-    "href": "resume.html#awards",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "2012 President, Royal Society, London, UK\nAssociate, French Academy of Science, Paris, France"
-  },
-  {
-    "objectID": "resume.html#publications",
-    "href": "resume.html#publications",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "1669 Newton Sir I, De analysi per æquationes numero terminorum infinitas.\n1669 Lectiones opticæ.\netc. etc. etc.\n\n\n\n2012 Infinitesimal calculus for solutions to physics problems, SMBC patent 001"
-  },
-  {
-    "objectID": "resume.html#occupation",
-    "href": "resume.html#occupation",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "1600 Royal Mint, London\n\nWarden\nMinted coins\n\n1600 Lucasian professor of Mathematics, Cambridge University"
-  },
-  {
-    "objectID": "Machine_Learning/project3.html",
-    "href": "Machine_Learning/project3.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Machine Learning",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project1.html",
-    "href": "Machine_Learning/project1.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Machine Learning",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "full_stack.html",
-    "href": "full_stack.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Full Stack"
-    ]
-  },
-  {
-    "objectID": "full_stack.html#title-2-header",
-    "href": "full_stack.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Full Stack"
-    ]
-  },
-  {
-    "objectID": "Full_Stack/project1.html",
-    "href": "Full_Stack/project1.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Full Stack",
-      "Project 1"
-    ]
-  },
-  {
     "objectID": "competition.html",
     "href": "competition.html",
     "title": "about me",
@@ -145,17 +19,6 @@
     "crumbs": [
       "Competitions",
       "Competition"
-    ]
-  },
-  {
-    "objectID": "Competition/project2.html",
-    "href": "Competition/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Competitions",
-      "Project 2"
     ]
   },
   {
@@ -181,14 +44,184 @@
     ]
   },
   {
-    "objectID": "Cleansing_Exploration/project2.html",
-    "href": "Cleansing_Exploration/project2.html",
+    "objectID": "Full_Stack/project1.html",
+    "href": "Full_Stack/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Full Stack",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Competition/project2.html",
+    "href": "Competition/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Competitions",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "Cleansing_Exploration/project3.html",
+    "href": "Cleansing_Exploration/project3.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
       "Data Exploration",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Cleansing_Exploration/project1.html",
+    "href": "Cleansing_Exploration/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Data Exploration",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "ml.html",
+    "href": "ml.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Machine Learning"
+    ]
+  },
+  {
+    "objectID": "ml.html#title-2-header",
+    "href": "ml.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Machine Learning"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project3.html",
+    "href": "Machine_Learning/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project1.html",
+    "href": "Machine_Learning/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Levi Mackay’s CV",
+    "section": "",
+    "text": "Computer Science Student, Software Developer, Computer Vision & Data Engineering\n\nmac21048@byui.edu | 208-284-4004 | My LinkedIn page\n\n\n\nComputer Science student at Brigham Young University-Idaho with a 4.0 GPA and strong foundations in Python, JavaScript, C#, and SQL. Experienced in data management, problem solving, and process improvement through technical and operational roles. Seeking a software development or technology-focused internship where I can apply programming, analytical thinking, and real-world problem solving to build meaningful solutions.\n\n\n\nSeptember 2024 - Present Brigham Young University-Idaho, Rexburg, ID\n\nBachelor of Science: Computer Science\nGPA: 4.0\nMinor: World Languages | Certificate: Computer Programming\nRelevant Coursework: Data Structures, Object-Oriented Programming, Databases, Web Development\n\n\n\n\nMay 2026 - Present Software Developer / Founder, Sandbox, Rexburg, ID\n2024 - 2025 Customer Service Representative, SafeStreets USA, Rexburg, ID\n\nManaged large datasets and customer records with high accuracy\nAdministered system permissions and user access across internal platforms\nIdentified and resolved account and system discrepancies through cross-team coordination\nStreamlined workflow processes to improve operational efficiency\n\nJune 2024 - April 2026 Lift Operations Assistant, Kelly Canyon Ski Resort, Kelly Canyon, ID\n\nOperated ski lifts efficiently and safely, ensuring smooth operations and a positive guest experience\nProvided assistance to skiers and snowboarders, ensuring their safety and comfort\nConducted routine safety checks on lift equipment and reported any malfunctions\nAssisted with crowd control and maintained a clean, organized work area\n\nJune 2020 - June 2022 Farm Hand, Mackay Farms, Mountain Home, ID\n\nAssisted in the preparation of soil for planting by tilling and plowing fields\nCared for livestock, including feeding, watering, and providing medical attention when necessary\nHarvested crops according to season and maintained records of yields\nMaintained farm equipment such as tractors, harvesters, and other machinery\nMonitored weather conditions to ensure optimal planting times\n\nJune 2020 - July 2022 Landscape Foreman, Yard Brothers Landscaping, Mountain Home, ID\n\nManaged planting, mulching, and edging of all landscape areas\nOrganized and scheduled crews for efficient completion of projects\nProvided direction to crew members to ensure safety regulations were followed\nInspected landscapes after installation to ensure quality standards were met\nAssisted in the selection of plants, shrubs, trees, and other materials for landscaping projects\nEnsured proper maintenance of equipment and tools used by crews\n\n\n\n\n\nProgramming: Python, JavaScript, C#, SQL\nWeb: HTML, CSS\nTools: Git (basic), VS Code, Excel, Data Entry Systems\nConcepts: Data Structures (intro), Object-Oriented Programming, Debugging, Data Analysis\n\n\n\n\nCroatian - Professional, Serbian - Professional, Bosnian - Professional, Montenegrin - Professional"
+  },
+  {
+    "objectID": "resume.html#summary",
+    "href": "resume.html#summary",
+    "title": "Levi Mackay’s CV",
+    "section": "",
+    "text": "Computer Science student at Brigham Young University-Idaho with a 4.0 GPA and strong foundations in Python, JavaScript, C#, and SQL. Experienced in data management, problem solving, and process improvement through technical and operational roles. Seeking a software development or technology-focused internship where I can apply programming, analytical thinking, and real-world problem solving to build meaningful solutions."
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Levi Mackay’s CV",
+    "section": "",
+    "text": "September 2024 - Present Brigham Young University-Idaho, Rexburg, ID\n\nBachelor of Science: Computer Science\nGPA: 4.0\nMinor: World Languages | Certificate: Computer Programming\nRelevant Coursework: Data Structures, Object-Oriented Programming, Databases, Web Development"
+  },
+  {
+    "objectID": "resume.html#experience",
+    "href": "resume.html#experience",
+    "title": "Levi Mackay’s CV",
+    "section": "",
+    "text": "May 2026 - Present Software Developer / Founder, Sandbox, Rexburg, ID\n2024 - 2025 Customer Service Representative, SafeStreets USA, Rexburg, ID\n\nManaged large datasets and customer records with high accuracy\nAdministered system permissions and user access across internal platforms\nIdentified and resolved account and system discrepancies through cross-team coordination\nStreamlined workflow processes to improve operational efficiency\n\nJune 2024 - April 2026 Lift Operations Assistant, Kelly Canyon Ski Resort, Kelly Canyon, ID\n\nOperated ski lifts efficiently and safely, ensuring smooth operations and a positive guest experience\nProvided assistance to skiers and snowboarders, ensuring their safety and comfort\nConducted routine safety checks on lift equipment and reported any malfunctions\nAssisted with crowd control and maintained a clean, organized work area\n\nJune 2020 - June 2022 Farm Hand, Mackay Farms, Mountain Home, ID\n\nAssisted in the preparation of soil for planting by tilling and plowing fields\nCared for livestock, including feeding, watering, and providing medical attention when necessary\nHarvested crops according to season and maintained records of yields\nMaintained farm equipment such as tractors, harvesters, and other machinery\nMonitored weather conditions to ensure optimal planting times\n\nJune 2020 - July 2022 Landscape Foreman, Yard Brothers Landscaping, Mountain Home, ID\n\nManaged planting, mulching, and edging of all landscape areas\nOrganized and scheduled crews for efficient completion of projects\nProvided direction to crew members to ensure safety regulations were followed\nInspected landscapes after installation to ensure quality standards were met\nAssisted in the selection of plants, shrubs, trees, and other materials for landscaping projects\nEnsured proper maintenance of equipment and tools used by crews"
+  },
+  {
+    "objectID": "resume.html#technical-skills",
+    "href": "resume.html#technical-skills",
+    "title": "Levi Mackay’s CV",
+    "section": "",
+    "text": "Programming: Python, JavaScript, C#, SQL\nWeb: HTML, CSS\nTools: Git (basic), VS Code, Excel, Data Entry Systems\nConcepts: Data Structures (intro), Object-Oriented Programming, Debugging, Data Analysis"
+  },
+  {
+    "objectID": "resume.html#languages",
+    "href": "resume.html#languages",
+    "title": "Levi Mackay’s CV",
+    "section": "",
+    "text": "Croatian - Professional, Serbian - Professional, Bosnian - Professional, Montenegrin - Professional"
+  },
+  {
+    "objectID": "Story_Telling/project3.html",
+    "href": "Story_Telling/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Story Telling",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Story_Telling/project1.html",
+    "href": "Story_Telling/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Story Telling",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Story_Telling/project2.html",
+    "href": "Story_Telling/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Story Telling",
       "Project 2"
+    ]
+  },
+  {
+    "objectID": "exploration.html",
+    "href": "exploration.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Data Exploration"
+    ]
+  },
+  {
+    "objectID": "exploration.html#title-2-header",
+    "href": "exploration.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Data Exploration"
     ]
   },
   {
@@ -212,35 +245,51 @@
     ]
   },
   {
-    "objectID": "Cleansing_Exploration/project1.html",
-    "href": "Cleansing_Exploration/project1.html",
+    "objectID": "Machine_Learning/project2.html",
+    "href": "Machine_Learning/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "about me",
+    "section": "",
+    "text": "Levi Mackay\nComputer Science Student @ BYU-Idaho | Software Developer | Computer Vision & Data Engineering | Sandbox Startup Program\nI’m a Computer Science student at BYU-Idaho with interests in software engineering, computer vision, and data systems.\nI enjoy building projects that combine real-time systems and structured data. Recent projects include SwingOS, a computer vision system using OpenCV and MediaPipe to provide biomechanical feedback, and a baseball analytics platform built with SQL and relational database design.\nI’m currently part of BYU-Idaho’s Sandbox startup program, where I work on building software products in a fast-paced, team-based environment.\nI’m actively seeking software engineering internship opportunities where I can continue growing as an engineer while contributing to meaningful products and systems.\nSoftware Engineering Portfolio | LinkedIn\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "story_telling.html",
+    "href": "story_telling.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Story Telling"
+    ]
+  },
+  {
+    "objectID": "story_telling.html#title-2-header",
+    "href": "story_telling.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Story Telling"
+    ]
+  },
+  {
+    "objectID": "Cleansing_Exploration/project2.html",
+    "href": "Cleansing_Exploration/project2.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
       "Data Exploration",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Cleansing_Exploration/project3.html",
-    "href": "Cleansing_Exploration/project3.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Data Exploration",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "Cleansing_Projects/project2.html",
-    "href": "Cleansing_Projects/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Data Cleansing",
       "Project 2"
     ]
   },
@@ -267,26 +316,6 @@
     ]
   },
   {
-    "objectID": "exploration.html",
-    "href": "exploration.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Data Exploration"
-    ]
-  },
-  {
-    "objectID": "exploration.html#title-2-header",
-    "href": "exploration.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Data Exploration"
-    ]
-  },
-  {
     "objectID": "Full_Stack/project2.html",
     "href": "Full_Stack/project2.html",
     "title": "Client Report - [Insert Project Title]",
@@ -298,70 +327,34 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "index.html#title-2-header",
-    "href": "index.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "Machine_Learning/project2.html",
-    "href": "Machine_Learning/project2.html",
+    "objectID": "Cleansing_Projects/project2.html",
+    "href": "Cleansing_Projects/project2.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
-      "Machine Learning",
+      "Data Cleansing",
       "Project 2"
     ]
   },
   {
-    "objectID": "ml.html",
-    "href": "ml.html",
+    "objectID": "full_stack.html",
+    "href": "full_stack.html",
     "title": "about me",
     "section": "",
     "text": "MarkDown Basics",
     "crumbs": [
-      "Machine Learning"
+      "Full Stack"
     ]
   },
   {
-    "objectID": "ml.html#title-2-header",
-    "href": "ml.html#title-2-header",
+    "objectID": "full_stack.html#title-2-header",
+    "href": "full_stack.html#title-2-header",
     "title": "about me",
     "section": "",
     "text": "MarkDown Basics",
     "crumbs": [
-      "Machine Learning"
-    ]
-  },
-  {
-    "objectID": "Story_Telling/project1.html",
-    "href": "Story_Telling/project1.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Story Telling",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Story_Telling/project3.html",
-    "href": "Story_Telling/project3.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Story Telling",
-      "Project 3"
+      "Full Stack"
     ]
   }
 ]

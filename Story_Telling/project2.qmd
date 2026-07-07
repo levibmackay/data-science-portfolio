@@ -1,7 +1,7 @@
 ---
 title: "Client Report - [Insert Project Title]"
 subtitle: "Course DS 250"
-author: "[STUDENT NAME]"
+author: "Levi Mackay"
 format:
   html:
     self-contained: true

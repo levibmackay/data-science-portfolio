@@ -4,7 +4,16 @@ subtitle: "my data science portfolio"
 # use quarto markdown to 
 ---
 
-# Title 1 Header
-## Title 2 Header
+# Levi Mackay
 
-[MarkDown Basics](https://quarto.org/docs/authoring/markdown-basics.html#links-images)
+Computer Science Student @ BYU-Idaho | Software Developer | Computer Vision & Data Engineering | Sandbox Startup Program
+
+I'm a Computer Science student at BYU-Idaho with interests in software engineering, computer vision, and data systems.
+
+I enjoy building projects that combine real-time systems and structured data. Recent projects include SwingOS, a computer vision system using OpenCV and MediaPipe to provide biomechanical feedback, and a baseball analytics platform built with SQL and relational database design.
+
+I'm currently part of BYU-Idaho's Sandbox startup program, where I work on building software products in a fast-paced, team-based environment.
+
+I'm actively seeking software engineering internship opportunities where I can continue growing as an engineer while contributing to meaningful products and systems.
+
+[Software Engineering Portfolio](https://levibmackay.github.io/Portfolio/website/index.html) | [LinkedIn](https://www.linkedin.com/in/levi-mackay-217380396)
