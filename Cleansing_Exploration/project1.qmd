@@ -1,6 +1,6 @@
 ---
-title: "Client Report - [Insert Project Title]"
-subtitle: "Course DS 250"
+title: "Baseball Analytics Engine — Query Layer"
+subtitle: "Personal Project"
 author: "Levi Mackay"
 format:
   html:
@@ -20,9 +20,68 @@ format:
         source: false
         toggle: true
         caption: See code
-execute: 
+execute:
   warning: false
-    
+
 ---
 
-### Paste in a template
+## Overview
+
+This is the exploration side of the [Baseball Analytics Engine](/Cleansing_Projects/project1.qmd) — once the schema was normalized, I wrote queries to pull real insight out of it: rolling performance windows, efficiency ratios, and league-wide rankings. It's the kind of analysis you'd actually see behind a sports platform, not a one-off report.
+
+**Stack:** MySQL
+
+## Rolling 5-Game Batting Average
+
+A window function partitioned per player and ordered by game date, so each row shows a trailing performance trend instead of a single-game snapshot.
+
+```sql
+SELECT
+    p.firstName, p.lastName, g.gameDate, ps.hits, ps.atBats,
+    ROUND(
+        SUM(ps.hits) OVER (
+            PARTITION BY p.playerID ORDER BY g.gameDate
+            ROWS BETWEEN 4 PRECEDING AND CURRENT ROW
+        ) /
+        NULLIF(SUM(ps.atBats) OVER (
+            PARTITION BY p.playerID ORDER BY g.gameDate
+            ROWS BETWEEN 4 PRECEDING AND CURRENT ROW
+        ), 0), 3
+    ) AS rolling_5game_avg
+FROM player p
+JOIN playerStats ps ON p.playerID = ps.playerID
+JOIN game g ON ps.gameID = g.gameID
+ORDER BY p.lastName, g.gameDate DESC;
+```
+
+## League Rankings with CTEs
+
+A CTE aggregates wins across home and away games, then `RANK()` orders the whole league by performance.
+
+```sql
+WITH TeamWins AS (
+    SELECT teamID, COUNT(*) AS wins
+    FROM (
+        SELECT homeTeamID AS teamID FROM game WHERE homeTeamScore > awayTeamScore
+        UNION ALL
+        SELECT awayTeamID AS teamID FROM game WHERE awayTeamScore > homeTeamScore
+    ) all_wins
+    GROUP BY teamID
+)
+SELECT
+    t.teamName, t.city,
+    COALESCE(tw.wins, 0) AS total_wins,
+    RANK() OVER (ORDER BY COALESCE(tw.wins, 0) DESC) AS league_rank
+FROM team t
+LEFT JOIN TeamWins tw ON t.teamID = tw.teamID
+ORDER BY league_rank ASC;
+```
+
+## Other Angles Explored
+
+- **RBI efficiency per hit** — `SUM(rbi) / SUM(hits)` per player, filtered to players with a meaningful sample size
+- **Ballpark run averages** — average combined runs per game, grouped by venue
+
+## Links
+
+- [Full source](https://github.com/levibmackay/Portfolio/tree/main/projects/baseball-database)

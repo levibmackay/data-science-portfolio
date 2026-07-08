@@ -4002,10 +4002,141 @@ vertical-align: -.125em;
 
 
 <style type="text/css">
+
+:root {
+--lm-bg: #0a0a0c;
+--lm-surface: #141419;
+--lm-surface-2: #1b1b22;
+--lm-text: #f5f5f7;
+--lm-muted: #9b9ba3;
+--lm-faint: #6e6e76;
+--lm-accent: #2997ff;
+--lm-accent-violet: #8c5cff;
+--lm-accent-cyan: #5ac8fa;
+--lm-hairline: rgba(255, 255, 255, 0.09);
+--lm-font-sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+--lm-font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+}
+body {
+font-family: var(--lm-font-sans);
+line-height: 1.65;
+}
+code, pre, kbd, samp {
+font-family: var(--lm-font-mono) !important;
+}
+.content p,
+.content li {
+max-width: 46em;
+}
+.content h1,
+.content h2,
+.content h3 {
+margin-top: 1.6em;
+margin-bottom: 0.6em;
+letter-spacing: -0.01em;
+}
+
+div.sourceCode {
+margin: 1em 0;
+border-radius: 10px;
+}
+pre code {
+line-height: 1.5;
+}
+
+#quarto-sidebar .sidebar-item {
+margin-bottom: 0.35em;
+}
+
+.content img {
+max-width: 100%;
+height: auto;
+}
+
+.page-footer {
+margin-top: 3em;
+padding-top: 1em;
+}
+
+a {
+color: var(--lm-accent);
+}
+a:hover {
+color: var(--lm-accent-violet);
+}
+
+body.quarto-dark {
+background: var(--lm-bg);
+color: var(--lm-text);
+}
+body.quarto-dark a {
+color: var(--lm-accent);
+}
+body.quarto-dark a:hover {
+color: var(--lm-accent-cyan);
+}
+body.quarto-dark #quarto-header .navbar {
+background: rgba(10, 10, 12, 0.85) !important;
+backdrop-filter: saturate(180%) blur(16px);
+-webkit-backdrop-filter: saturate(180%) blur(16px);
+border-bottom: 1px solid var(--lm-hairline);
+}
+body.quarto-dark .navbar-nav .nav-link.active,
+body.quarto-dark .navbar-nav .nav-link:hover {
+color: var(--lm-accent) !important;
+}
+body.quarto-dark #quarto-sidebar,
+body.quarto-dark .sidebar {
+background: var(--lm-surface) !important;
+border-right: 1px solid var(--lm-hairline);
+}
+body.quarto-dark .sidebar-item a {
+color: var(--lm-muted);
+}
+body.quarto-dark .sidebar-item a:hover,
+body.quarto-dark .sidebar-item a.active {
+color: var(--lm-accent);
+}
+body.quarto-dark div.sourceCode,
+body.quarto-dark pre.sourceCode {
+background: var(--lm-surface) !important;
+border: 1px solid var(--lm-hairline);
+}
+body.quarto-dark code:not(.sourceCode) {
+background: var(--lm-surface-2);
+color: var(--lm-accent-cyan);
+border-radius: 4px;
+padding: 0.1em 0.4em;
+}
+body.quarto-dark .quarto-title-banner {
+background: var(--lm-surface) !important;
+border-bottom: 1px solid var(--lm-hairline);
+}
+body.quarto-dark #TOC a.active,
+body.quarto-dark nav[role="doc-toc"] a.active {
+color: var(--lm-accent) !important;
+border-left-color: var(--lm-accent) !important;
+}
+body.quarto-dark .btn,
+body.quarto-dark .code-tools-button {
+border-color: var(--lm-hairline);
+border-radius: 999px;
+}
+body.quarto-dark .page-footer {
+background: var(--lm-bg) !important;
+border-top: 1px solid var(--lm-hairline);
+color: var(--lm-faint);
+}
+body.quarto-dark .page-footer a {
+color: var(--lm-muted);
+}
+body.quarto-dark .page-footer a:hover {
+color: var(--lm-accent);
+}
 </style>
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -4213,7 +4344,7 @@ vertical-align: -.125em;
 <span class="menu-text">Full Stack</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../competition.html" aria-current="page"> 
+    <a class="nav-link" href="../competition.html"> 
 <span class="menu-text">Competitions</span></a>
   </li>  
 </ul>
@@ -4223,28 +4354,18 @@ vertical-align: -.125em;
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Competition/project1.html">Project 1</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-right">
+    <div class="quarto-title column-page">
       <h1 class="title">Client Report - [Insert Project Title]</h1>
             <p class="subtitle lead">Course DS 250</p>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-right">
+  <div class="quarto-title-meta column-page">
 
       <div>
       <div class="quarto-title-meta-heading">Author</div>
@@ -4260,46 +4381,11 @@ vertical-align: -.125em;
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../competition.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Competition</span></a>
-  </div>
-</li>
-        <li class="px-0"><hr class="sidebar-divider hi "></li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../Competition/project1.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Project 1</span></a>
-  </div>
-</li>
-        <li class="px-0"><hr class="sidebar-divider hi "></li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../Competition/project2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Project 2</span></a>
-  </div>
-</li>
-        <li class="px-0"><hr class="sidebar-divider hi "></li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../Competition/project3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Project 3</span></a>
-  </div>
-</li>
-        <li class="px-0"><hr class="sidebar-divider hi "></li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
 

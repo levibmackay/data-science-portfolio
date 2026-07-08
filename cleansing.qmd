@@ -1,10 +1,10 @@
 ---
-title: "About Me"
-subtitle: "My Data Science Portfolio"
-# use quarto markdown to 
+title: "Data Cleansing"
+subtitle: "Turning raw, messy data into something you can trust"
 ---
 
-# Title 1 Header
-## Title 2 Header
+# Data Cleansing
 
-[MarkDown Basics](https://quarto.org/docs/authoring/markdown-basics.html#links-images)
+Before any analysis is useful, the underlying data has to be structured, normalized, and free of contradictions. The project below shows how I take raw records and design them into a clean, reliable schema.
+
+- [Baseball Analytics Engine](Cleansing_Projects/project1.qmd) — a normalized MySQL schema built from raw player, team, and game data

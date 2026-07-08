@@ -1,10 +1,10 @@
 ---
-title: "About Me"
-subtitle: "My Data Science Portfolio"
-# use quarto markdown to 
+title: "Data Exploration"
+subtitle: "Finding the signal inside the data"
 ---
 
-# Title 1 Header
-## Title 2 Header
+# Data Exploration
 
-[MarkDown Basics](https://quarto.org/docs/authoring/markdown-basics.html#links-images)
+Once data is clean, the next step is asking it questions. The project below digs into a normalized baseball database using window functions and CTEs to surface trends a flat query couldn't easily show.
+
+- [Baseball Analytics Engine — Query Layer](Cleansing_Exploration/project1.qmd) — rolling averages, RBI efficiency, and league rankings pulled out of a relational baseball database

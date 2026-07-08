@@ -1,10 +1,8 @@
 ---
-title: "About Me"
-subtitle: "My Data Science Portfolio"
-# use quarto markdown to 
+title: "Competition"
+subtitle: "Head-to-head data challenges"
 ---
 
-# Title 1 Header
-## Title 2 Header
+# Competition
 
-[MarkDown Basics](https://quarto.org/docs/authoring/markdown-basics.html#links-images)
+This section is for competitive data science work — Kaggle-style challenges and similar contests. Nothing here yet; check back as I take one on.

@@ -1,6 +1,6 @@
 ---
-title: "Client Report - [Insert Project Title]"
-subtitle: "Course DS 250"
+title: "SwingOS"
+subtitle: "Personal Project"
 author: "Levi Mackay"
 format:
   html:
@@ -20,9 +20,43 @@ format:
         source: false
         toggle: true
         caption: See code
-execute: 
+execute:
   warning: false
-    
+
 ---
 
-### Paste in a template
+## Overview
+
+SwingOS is a real-time computer vision tool that watches a baseball swing through a webcam and gives instant feedback on head movement — one of the most common mechanical breakdowns in hitting. I built it to see if I could train my body to feel correct mechanics without needing a coach standing there watching every rep.
+
+**Stack:** Python, OpenCV, MediaPipe
+
+## How It Works
+
+MediaPipe's pretrained pose-landmark model tracks 33 body landmarks per frame in real time. The app pulls out just the nose landmark as a proxy for head position, lets the user lock in an anchor point (`S` key), and then continuously compares the live head position against that anchor.
+
+```python
+if key == ord('s'):
+    if results.pose_landmarks:
+        nose = results.pose_landmarks.landmark[mp_pose.PoseLandmark.NOSE]
+        head_anchor_y = nose.y
+        status = "ANCHOR SET - STAY LEVEL"
+
+if head_anchor_y is not None:
+    current_nose_y = results.pose_landmarks.landmark[mp_pose.PoseLandmark.NOSE].y
+    diff = int(head_anchor_y * h) - int(current_nose_y * h)
+    if abs(diff) > 20:
+        status = "WATCH YOUR HEAD!" if diff < 0 else "STAY DOWN!"
+    else:
+        status = "SOLID"
+```
+
+A green line marks the anchor, a red line marks the current head position, and a status banner tells the hitter to adjust in real time — no delay, no reviewing footage after the fact.
+
+## Why It Matters
+
+This is applied ML in the sense that matters to me most: taking a general-purpose pretrained model (pose estimation) and wiring it into a tight feedback loop that solves a specific, real problem. The interesting part isn't training a model — it's turning model output into a signal a person can actually act on in the half-second it takes to swing a bat.
+
+## Links
+
+- [Full source](https://github.com/levibmackay/Portfolio/tree/main/projects/swing-analyzer)

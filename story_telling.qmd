@@ -1,10 +1,8 @@
 ---
-title: "About Me"
-subtitle: "My Data Science Portfolio"
-# use quarto markdown to 
+title: "Story Telling"
+subtitle: "Turning data into a narrative"
 ---
 
-# Title 1 Header
-## Title 2 Header
+# Story Telling
 
-[MarkDown Basics](https://quarto.org/docs/authoring/markdown-basics.html#links-images)
+This section is for projects focused on communicating findings clearly — visualizations and narratives that make data make sense to someone who wasn't in the room when it was analyzed. Nothing here yet; check back as I finish a project that fits.

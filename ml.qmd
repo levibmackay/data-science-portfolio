@@ -1,11 +1,10 @@
 ---
-title: "About Me"
-subtitle: "My Data Science Portfolio"
-# use quarto markdown to 
+title: "Machine Learning"
+subtitle: "Applying models to real-time problems"
 ---
 
-# Title 1 Header
-## Title 2 Header
+# Machine Learning
 
-[MarkDown Basics](https://quarto.org/docs/authoring/markdown-basics.html#links-images)
+I'm most interested in ML when it's driving something live and interactive rather than sitting in a notebook. The project below uses a pretrained pose-estimation model to give real-time biomechanical feedback from a webcam feed.
 
+- [SwingOS](Machine_Learning/project1.qmd) — real-time pose tracking for baseball swing mechanics, built with OpenCV and MediaPipe

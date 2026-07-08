@@ -1,10 +1,10 @@
 ---
-title: "About Me"
-subtitle: "My Data Science Portfolio"
-# use quarto markdown to 
+title: "Full Stack"
+subtitle: "From API to database to dashboard"
 ---
 
-# Title 1 Header
-## Title 2 Header
+# Full Stack
 
-[MarkDown Basics](https://quarto.org/docs/authoring/markdown-basics.html#links-images)
+These projects span the whole pipeline — pulling data from an external API, storing and modeling it, running analysis on top, and surfacing it through an interactive interface.
+
+- [Canvas-Risk](Full_Stack/project1.qmd) — a Canvas LMS integration with a SQLite-backed data layer, a weighted risk-scoring engine, and a live terminal dashboard

@@ -1,6 +1,6 @@
 ---
-title: "Client Report - [Insert Project Title]"
-subtitle: "Course DS 250"
+title: "Baseball Analytics Engine"
+subtitle: "Personal Project"
 author: "Levi Mackay"
 format:
   html:
@@ -20,9 +20,39 @@ format:
         source: false
         toggle: true
         caption: See code
-execute: 
+execute:
   warning: false
-    
+
 ---
 
-### Paste in a template
+## Overview
+
+This started as a database design exercise and turned into something I actually care about. The goal was to take raw baseball data — players, teams, games, per-game stats, and ballparks — and turn it into a normalized relational schema that could actually support real analysis instead of one giant flat spreadsheet.
+
+**Stack:** MySQL, MySQL Workbench
+
+## The Schema
+
+Everything is connected through foreign keys instead of repeated, denormalized columns: `player`, `team`, `game`, `playerStats`, and `ballpark` tables each hold one kind of fact, and joins reconstruct the full picture on demand. That structure is what makes the analytical queries in the [Data Exploration](/exploration.qmd) section possible — cleaning and modeling the data correctly up front means the downstream queries stay simple.
+
+```sql
+-- Example: a normalized fact table instead of a flat file
+CREATE TABLE playerStats (
+    statID INT PRIMARY KEY AUTO_INCREMENT,
+    playerID INT NOT NULL,
+    gameID INT NOT NULL,
+    atBats INT,
+    hits INT,
+    rbi INT,
+    FOREIGN KEY (playerID) REFERENCES player(playerID),
+    FOREIGN KEY (gameID) REFERENCES game(gameID)
+);
+```
+
+## Why It Matters
+
+Bad or unstructured data breaks everything downstream of it. Designing the schema first — deciding what belongs in its own table, what's a foreign key vs. a duplicated string, and where the data can go inconsistent — is the unglamorous work that makes every later query trustworthy.
+
+## Links
+
+- [Full source and MySQL Workbench model](https://github.com/levibmackay/Portfolio/tree/main/projects/baseball-database)

@@ -1,6 +1,6 @@
 ---
-title: "Client Report - [Insert Project Title]"
-subtitle: "Course DS 250"
+title: "Canvas-Risk"
+subtitle: "Personal Project"
 author: "Levi Mackay"
 format:
   html:
@@ -20,9 +20,47 @@ format:
         source: false
         toggle: true
         caption: See code
-execute: 
+execute:
   warning: false
-    
+
 ---
 
-### Paste in a template
+## Overview
+
+Canvas-Risk is a terminal dashboard that connects to the Canvas LMS API and flags students who are at risk of falling behind — missing work, slipping grades, and inactivity — before it's too late in the semester to fix. It touches every layer of the stack: an external API client, a persistent database, an analytics engine on top, and an interactive UI.
+
+**Stack:** Python, SQLAlchemy, SQLite, Textual, Typer
+
+## Architecture
+
+| Layer | Role |
+|---|---|
+| `api/` | Paginated client that pulls students, assignments, and submissions from the Canvas REST API |
+| `database/` | SQLAlchemy models + a SQLite manager for local caching and historical trend tracking |
+| `analytics/` | The risk-scoring engine |
+| `ui/` | A real-time Textual dashboard |
+| `commands/` | Typer-based CLI for quick terminal reports |
+
+## The Risk Engine
+
+Each student's failure probability is a weighted blend of signals pulled straight from the synced Canvas data — current grade, missing assignments, grade trend over time, inactivity, and how they compare to their peers:
+
+```python
+WEIGHTS = {
+    'grade': 0.40,
+    'missing': 0.30,
+    'trend': 0.10,
+    'inactivity': 0.10,
+    'peer_comparison': 0.10
+}
+```
+
+On top of the raw score, students get tagged into a profile — High Achiever, The Ghost (inactive with missing work), Slipping, Chronic Latecomer, and so on — so a TA scanning the dashboard gets an instant read instead of just a number.
+
+## Why It Matters
+
+This is the project that best represents "full stack" for me: real external data in, a proper local data model, analysis logic that turns raw numbers into a decision-ready signal, and a UI that makes it usable without touching a database client. Every layer had to work for the last one to mean anything.
+
+## Links
+
+- [Full source](https://github.com/levibmackay/AI-Projects/tree/main/canvas-risk)
