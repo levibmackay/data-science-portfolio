@@ -1,6 +1,8 @@
-project: 
+project:
   type: website
   output-dir: docs
+  resources:
+    - dotfield.js
 
 website:
   title: "Levi Mackay - Data Science Portfolio"
@@ -36,70 +38,16 @@ website:
         file: full_stack.qmd
       - text: "Competitions"
         file: competition.qmd
-  
-  # learn more about navication here https://quarto.org/docs/websites/website-navigation.html
-  # comment out any of the sections below to turn off the sidebar
 
-  sidebar: 
-    - title: "Data Cleansing"
-      style: "docked"
-      background: light
-      contents:
-        - text: "Data Cleansing"
-          file: cleansing.qmd
-        - text: "---"
-        - text: "Baseball Analytics Engine"
-          file: Cleansing_Projects/project1.qmd
-    - title: "Data Exploration"
-      style: "docked"
-      background: light
-      contents:
-        - text: "Data Exploration"
-          file: exploration.qmd
-        - text: "---"
-        - text: "Baseball Analytics Engine — Queries"
-          file: Cleansing_Exploration/project1.qmd
-    - title: "Story Telling"
-      style: "docked"
-      background: light
-      contents:
-        - text: "Story Telling"
-          file: story_telling.qmd
-    - title: "Machine Learning"
-      style: "docked"
-      background: light
-      contents:
-        - text: "Machine Learning"
-          file: ml.qmd
-        - text: "---"
-        - text: "SwingOS"
-          file: Machine_Learning/project1.qmd
-    - title: "Full Stack"
-      style: "docked"
-      background: light
-      contents:
-        - text: "Full Stack"
-          file: full_stack.qmd
-        - text: "---"
-        - text: "Canvas-Risk"
-          file: Full_Stack/project1.qmd
-    - title: "Competition"
-      style: "docked"
-      background: light
-      contents:
-        - text: "Competition"
-          file: competition.qmd
-
-  
-format:  
+format:
   html:
-    theme: #see this link to customize the theme with css (https://quarto.org/docs/output-formats/html-themes.html#dark-mode)
-      light: flatly # more themes can be found [here](https://quarto.org/docs/output-formats/html-themes.html)
-      dark: darkly
-      #light: cosmo
-      #dark: [cosmo, theme-dark.scss]
+    theme: darkly
     css: styles.css
     toc: true
+    include-after-body:
+      text: |
+        <canvas id="dot-field" aria-hidden="true"></canvas>
+        <script src="/dotfield.js"></script>
 
 
 

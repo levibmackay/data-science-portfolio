@@ -1,7 +1,6 @@
 ---
 title: "About Me"
 subtitle: "My Data Science Portfolio"
-# use quarto markdown to 
 ---
 
 # Levi Mackay

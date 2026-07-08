@@ -1,18 +1,47 @@
-# BYUI DS Portfolio Template
-## Building a Quarto Portfolo
+```
+ _                _     __  __            _                
+| |    _____   __(_)   |  \/  | __ _  ___| | ____ _ _   _  
+| |   / _ \ \ / /| |   | |\/| |/ _` |/ __| |/ / _` | | | | 
+| |__|  __/\ V / | |   | |  | | (_| | (__|   < (_| | |_| | 
+|_____\___| \_/  |_|   |_|  |_|\__,_|\___|_|\_\__,_|\__, | 
+                                                     |___/  
+                  data science portfolio
+```
 
-A template for a portfolio developed with Quarto and hosted on GitHub.
+Live site: [levibmackay.github.io/data-science-portfolio](https://levibmackay.github.io/data-science-portfolio)
 
-This is all configured so you only need to edit the source files in Quarto (.qmd). The website is generated and hosted automatically by GitHub.
+Built with [Quarto](https://quarto.org), hosted on GitHub Pages.
 
-## Using this template
+## What's here
 
-1. Click on green button "Use this Tempalte" -> "Create a new Repo"
+| Section | Project |
+|---|---|
+| Data Cleansing | Baseball Analytics Engine — normalized MySQL schema |
+| Data Exploration | Baseball Analytics Engine — window functions, CTEs, league rankings |
+| Machine Learning | SwingOS — real-time swing feedback with OpenCV + MediaPipe |
+| Full Stack | Canvas-Risk — Canvas LMS API, SQLite, risk scoring, TUI dashboard |
+| Story Telling | in progress |
+| Competition | in progress |
 
-1. Choose a name for your repository
+Resume lives at `/resume.qmd`.
 
-1. Important: check 'Include all branches' when creating the repository (because we will need the gh-pages branch to host the website).
+## Stack
 
-1. Once your repo is created, remember to update the links to your GitHub repo in _quarto.yml, replacing every instance 'your_name'.
+Quarto, Bootstrap (darkly), vanilla CSS/JS for the background and nav effects.
 
-1. The first time you publish to your repo use this command line string `quarto publish gh-pages` in the vs code terminal.
+## Running locally
+
+```
+quarto preview
+```
+
+## Publishing
+
+```
+quarto render
+git add .
+git commit -m "update site"
+git push
+```
+
+GitHub Pages serves from `/docs` on `main`.

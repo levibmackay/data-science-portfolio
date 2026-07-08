@@ -4,11 +4,7 @@
     "href": "competition.html",
     "title": "Competition",
     "section": "",
-    "text": "Competition\nThis section is for competitive data science work — Kaggle-style challenges and similar contests. Nothing here yet; check back as I take one on.\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Competitions",
-      "Competition"
-    ]
+    "text": "Competition\nThis section is for competitive data science work — Kaggle-style challenges and similar contests. Nothing here yet; check back as I take one on.\n\n\n\n\n Back to top"
   },
   {
     "objectID": "Cleansing_Projects/project3.html",
@@ -22,121 +18,77 @@
     "href": "Cleansing_Projects/project1.html",
     "title": "Baseball Analytics Engine",
     "section": "",
-    "text": "This started as a database design exercise and turned into something I actually care about. The goal was to take raw baseball data — players, teams, games, per-game stats, and ballparks — and turn it into a normalized relational schema that could actually support real analysis instead of one giant flat spreadsheet.\nStack: MySQL, MySQL Workbench",
-    "crumbs": [
-      "Data Cleansing",
-      "Baseball Analytics Engine"
-    ]
+    "text": "This started as a database design exercise and turned into something I actually care about. The goal was to take raw baseball data — players, teams, games, per-game stats, and ballparks — and turn it into a normalized relational schema that could actually support real analysis instead of one giant flat spreadsheet.\nStack: MySQL, MySQL Workbench"
   },
   {
     "objectID": "Cleansing_Projects/project1.html#overview",
     "href": "Cleansing_Projects/project1.html#overview",
     "title": "Baseball Analytics Engine",
     "section": "",
-    "text": "This started as a database design exercise and turned into something I actually care about. The goal was to take raw baseball data — players, teams, games, per-game stats, and ballparks — and turn it into a normalized relational schema that could actually support real analysis instead of one giant flat spreadsheet.\nStack: MySQL, MySQL Workbench",
-    "crumbs": [
-      "Data Cleansing",
-      "Baseball Analytics Engine"
-    ]
+    "text": "This started as a database design exercise and turned into something I actually care about. The goal was to take raw baseball data — players, teams, games, per-game stats, and ballparks — and turn it into a normalized relational schema that could actually support real analysis instead of one giant flat spreadsheet.\nStack: MySQL, MySQL Workbench"
   },
   {
     "objectID": "Cleansing_Projects/project1.html#the-schema",
     "href": "Cleansing_Projects/project1.html#the-schema",
     "title": "Baseball Analytics Engine",
     "section": "The Schema",
-    "text": "The Schema\nEverything is connected through foreign keys instead of repeated, denormalized columns: player, team, game, playerStats, and ballpark tables each hold one kind of fact, and joins reconstruct the full picture on demand. That structure is what makes the analytical queries in the Data Exploration section possible — cleaning and modeling the data correctly up front means the downstream queries stay simple.\n-- Example: a normalized fact table instead of a flat file\nCREATE TABLE playerStats (\n    statID INT PRIMARY KEY AUTO_INCREMENT,\n    playerID INT NOT NULL,\n    gameID INT NOT NULL,\n    atBats INT,\n    hits INT,\n    rbi INT,\n    FOREIGN KEY (playerID) REFERENCES player(playerID),\n    FOREIGN KEY (gameID) REFERENCES game(gameID)\n);",
-    "crumbs": [
-      "Data Cleansing",
-      "Baseball Analytics Engine"
-    ]
+    "text": "The Schema\nEverything is connected through foreign keys instead of repeated, denormalized columns: player, team, game, playerStats, and ballpark tables each hold one kind of fact, and joins reconstruct the full picture on demand. That structure is what makes the analytical queries in the Data Exploration section possible — cleaning and modeling the data correctly up front means the downstream queries stay simple.\n-- Example: a normalized fact table instead of a flat file\nCREATE TABLE playerStats (\n    statID INT PRIMARY KEY AUTO_INCREMENT,\n    playerID INT NOT NULL,\n    gameID INT NOT NULL,\n    atBats INT,\n    hits INT,\n    rbi INT,\n    FOREIGN KEY (playerID) REFERENCES player(playerID),\n    FOREIGN KEY (gameID) REFERENCES game(gameID)\n);"
   },
   {
     "objectID": "Cleansing_Projects/project1.html#why-it-matters",
     "href": "Cleansing_Projects/project1.html#why-it-matters",
     "title": "Baseball Analytics Engine",
     "section": "Why It Matters",
-    "text": "Why It Matters\nBad or unstructured data breaks everything downstream of it. Designing the schema first — deciding what belongs in its own table, what’s a foreign key vs. a duplicated string, and where the data can go inconsistent — is the unglamorous work that makes every later query trustworthy.",
-    "crumbs": [
-      "Data Cleansing",
-      "Baseball Analytics Engine"
-    ]
+    "text": "Why It Matters\nBad or unstructured data breaks everything downstream of it. Designing the schema first — deciding what belongs in its own table, what’s a foreign key vs. a duplicated string, and where the data can go inconsistent — is the unglamorous work that makes every later query trustworthy."
   },
   {
     "objectID": "Cleansing_Projects/project1.html#links",
     "href": "Cleansing_Projects/project1.html#links",
     "title": "Baseball Analytics Engine",
     "section": "Links",
-    "text": "Links\n\nFull source and MySQL Workbench model",
-    "crumbs": [
-      "Data Cleansing",
-      "Baseball Analytics Engine"
-    ]
+    "text": "Links\n\nFull source and MySQL Workbench model"
   },
   {
     "objectID": "Full_Stack/project1.html",
     "href": "Full_Stack/project1.html",
     "title": "Canvas-Risk",
     "section": "",
-    "text": "Canvas-Risk is a terminal dashboard that connects to the Canvas LMS API and flags students who are at risk of falling behind — missing work, slipping grades, and inactivity — before it’s too late in the semester to fix. It touches every layer of the stack: an external API client, a persistent database, an analytics engine on top, and an interactive UI.\nStack: Python, SQLAlchemy, SQLite, Textual, Typer",
-    "crumbs": [
-      "Full Stack",
-      "Canvas-Risk"
-    ]
+    "text": "Canvas-Risk is a terminal dashboard that connects to the Canvas LMS API and flags students who are at risk of falling behind — missing work, slipping grades, and inactivity — before it’s too late in the semester to fix. It touches every layer of the stack: an external API client, a persistent database, an analytics engine on top, and an interactive UI.\nStack: Python, SQLAlchemy, SQLite, Textual, Typer"
   },
   {
     "objectID": "Full_Stack/project1.html#overview",
     "href": "Full_Stack/project1.html#overview",
     "title": "Canvas-Risk",
     "section": "",
-    "text": "Canvas-Risk is a terminal dashboard that connects to the Canvas LMS API and flags students who are at risk of falling behind — missing work, slipping grades, and inactivity — before it’s too late in the semester to fix. It touches every layer of the stack: an external API client, a persistent database, an analytics engine on top, and an interactive UI.\nStack: Python, SQLAlchemy, SQLite, Textual, Typer",
-    "crumbs": [
-      "Full Stack",
-      "Canvas-Risk"
-    ]
+    "text": "Canvas-Risk is a terminal dashboard that connects to the Canvas LMS API and flags students who are at risk of falling behind — missing work, slipping grades, and inactivity — before it’s too late in the semester to fix. It touches every layer of the stack: an external API client, a persistent database, an analytics engine on top, and an interactive UI.\nStack: Python, SQLAlchemy, SQLite, Textual, Typer"
   },
   {
     "objectID": "Full_Stack/project1.html#architecture",
     "href": "Full_Stack/project1.html#architecture",
     "title": "Canvas-Risk",
     "section": "Architecture",
-    "text": "Architecture\n\n\n\n\n\n\n\nLayer\nRole\n\n\n\n\napi/\nPaginated client that pulls students, assignments, and submissions from the Canvas REST API\n\n\ndatabase/\nSQLAlchemy models + a SQLite manager for local caching and historical trend tracking\n\n\nanalytics/\nThe risk-scoring engine\n\n\nui/\nA real-time Textual dashboard\n\n\ncommands/\nTyper-based CLI for quick terminal reports",
-    "crumbs": [
-      "Full Stack",
-      "Canvas-Risk"
-    ]
+    "text": "Architecture\n\n\n\n\n\n\n\nLayer\nRole\n\n\n\n\napi/\nPaginated client that pulls students, assignments, and submissions from the Canvas REST API\n\n\ndatabase/\nSQLAlchemy models + a SQLite manager for local caching and historical trend tracking\n\n\nanalytics/\nThe risk-scoring engine\n\n\nui/\nA real-time Textual dashboard\n\n\ncommands/\nTyper-based CLI for quick terminal reports"
   },
   {
     "objectID": "Full_Stack/project1.html#the-risk-engine",
     "href": "Full_Stack/project1.html#the-risk-engine",
     "title": "Canvas-Risk",
     "section": "The Risk Engine",
-    "text": "The Risk Engine\nEach student’s failure probability is a weighted blend of signals pulled straight from the synced Canvas data — current grade, missing assignments, grade trend over time, inactivity, and how they compare to their peers:\nWEIGHTS = {\n    'grade': 0.40,\n    'missing': 0.30,\n    'trend': 0.10,\n    'inactivity': 0.10,\n    'peer_comparison': 0.10\n}\nOn top of the raw score, students get tagged into a profile — High Achiever, The Ghost (inactive with missing work), Slipping, Chronic Latecomer, and so on — so a TA scanning the dashboard gets an instant read instead of just a number.",
-    "crumbs": [
-      "Full Stack",
-      "Canvas-Risk"
-    ]
+    "text": "The Risk Engine\nEach student’s failure probability is a weighted blend of signals pulled straight from the synced Canvas data — current grade, missing assignments, grade trend over time, inactivity, and how they compare to their peers:\nWEIGHTS = {\n    'grade': 0.40,\n    'missing': 0.30,\n    'trend': 0.10,\n    'inactivity': 0.10,\n    'peer_comparison': 0.10\n}\nOn top of the raw score, students get tagged into a profile — High Achiever, The Ghost (inactive with missing work), Slipping, Chronic Latecomer, and so on — so a TA scanning the dashboard gets an instant read instead of just a number."
   },
   {
     "objectID": "Full_Stack/project1.html#why-it-matters",
     "href": "Full_Stack/project1.html#why-it-matters",
     "title": "Canvas-Risk",
     "section": "Why It Matters",
-    "text": "Why It Matters\nThis is the project that best represents “full stack” for me: real external data in, a proper local data model, analysis logic that turns raw numbers into a decision-ready signal, and a UI that makes it usable without touching a database client. Every layer had to work for the last one to mean anything.",
-    "crumbs": [
-      "Full Stack",
-      "Canvas-Risk"
-    ]
+    "text": "Why It Matters\nThis is the project that best represents “full stack” for me: real external data in, a proper local data model, analysis logic that turns raw numbers into a decision-ready signal, and a UI that makes it usable without touching a database client. Every layer had to work for the last one to mean anything."
   },
   {
     "objectID": "Full_Stack/project1.html#links",
     "href": "Full_Stack/project1.html#links",
     "title": "Canvas-Risk",
     "section": "Links",
-    "text": "Links\n\nFull source",
-    "crumbs": [
-      "Full Stack",
-      "Canvas-Risk"
-    ]
+    "text": "Links\n\nFull source"
   },
   {
     "objectID": "Competition/project2.html",
@@ -157,76 +109,49 @@
     "href": "Cleansing_Exploration/project1.html",
     "title": "Baseball Analytics Engine — Query Layer",
     "section": "",
-    "text": "This is the exploration side of the Baseball Analytics Engine — once the schema was normalized, I wrote queries to pull real insight out of it: rolling performance windows, efficiency ratios, and league-wide rankings. It’s the kind of analysis you’d actually see behind a sports platform, not a one-off report.\nStack: MySQL",
-    "crumbs": [
-      "Data Exploration",
-      "Baseball Analytics Engine — Queries"
-    ]
+    "text": "This is the exploration side of the Baseball Analytics Engine — once the schema was normalized, I wrote queries to pull real insight out of it: rolling performance windows, efficiency ratios, and league-wide rankings. It’s the kind of analysis you’d actually see behind a sports platform, not a one-off report.\nStack: MySQL"
   },
   {
     "objectID": "Cleansing_Exploration/project1.html#overview",
     "href": "Cleansing_Exploration/project1.html#overview",
     "title": "Baseball Analytics Engine — Query Layer",
     "section": "",
-    "text": "This is the exploration side of the Baseball Analytics Engine — once the schema was normalized, I wrote queries to pull real insight out of it: rolling performance windows, efficiency ratios, and league-wide rankings. It’s the kind of analysis you’d actually see behind a sports platform, not a one-off report.\nStack: MySQL",
-    "crumbs": [
-      "Data Exploration",
-      "Baseball Analytics Engine — Queries"
-    ]
+    "text": "This is the exploration side of the Baseball Analytics Engine — once the schema was normalized, I wrote queries to pull real insight out of it: rolling performance windows, efficiency ratios, and league-wide rankings. It’s the kind of analysis you’d actually see behind a sports platform, not a one-off report.\nStack: MySQL"
   },
   {
     "objectID": "Cleansing_Exploration/project1.html#rolling-5-game-batting-average",
     "href": "Cleansing_Exploration/project1.html#rolling-5-game-batting-average",
     "title": "Baseball Analytics Engine — Query Layer",
     "section": "Rolling 5-Game Batting Average",
-    "text": "Rolling 5-Game Batting Average\nA window function partitioned per player and ordered by game date, so each row shows a trailing performance trend instead of a single-game snapshot.\nSELECT\n    p.firstName, p.lastName, g.gameDate, ps.hits, ps.atBats,\n    ROUND(\n        SUM(ps.hits) OVER (\n            PARTITION BY p.playerID ORDER BY g.gameDate\n            ROWS BETWEEN 4 PRECEDING AND CURRENT ROW\n        ) /\n        NULLIF(SUM(ps.atBats) OVER (\n            PARTITION BY p.playerID ORDER BY g.gameDate\n            ROWS BETWEEN 4 PRECEDING AND CURRENT ROW\n        ), 0), 3\n    ) AS rolling_5game_avg\nFROM player p\nJOIN playerStats ps ON p.playerID = ps.playerID\nJOIN game g ON ps.gameID = g.gameID\nORDER BY p.lastName, g.gameDate DESC;",
-    "crumbs": [
-      "Data Exploration",
-      "Baseball Analytics Engine — Queries"
-    ]
+    "text": "Rolling 5-Game Batting Average\nA window function partitioned per player and ordered by game date, so each row shows a trailing performance trend instead of a single-game snapshot.\nSELECT\n    p.firstName, p.lastName, g.gameDate, ps.hits, ps.atBats,\n    ROUND(\n        SUM(ps.hits) OVER (\n            PARTITION BY p.playerID ORDER BY g.gameDate\n            ROWS BETWEEN 4 PRECEDING AND CURRENT ROW\n        ) /\n        NULLIF(SUM(ps.atBats) OVER (\n            PARTITION BY p.playerID ORDER BY g.gameDate\n            ROWS BETWEEN 4 PRECEDING AND CURRENT ROW\n        ), 0), 3\n    ) AS rolling_5game_avg\nFROM player p\nJOIN playerStats ps ON p.playerID = ps.playerID\nJOIN game g ON ps.gameID = g.gameID\nORDER BY p.lastName, g.gameDate DESC;"
   },
   {
     "objectID": "Cleansing_Exploration/project1.html#league-rankings-with-ctes",
     "href": "Cleansing_Exploration/project1.html#league-rankings-with-ctes",
     "title": "Baseball Analytics Engine — Query Layer",
     "section": "League Rankings with CTEs",
-    "text": "League Rankings with CTEs\nA CTE aggregates wins across home and away games, then RANK() orders the whole league by performance.\nWITH TeamWins AS (\n    SELECT teamID, COUNT(*) AS wins\n    FROM (\n        SELECT homeTeamID AS teamID FROM game WHERE homeTeamScore &gt; awayTeamScore\n        UNION ALL\n        SELECT awayTeamID AS teamID FROM game WHERE awayTeamScore &gt; homeTeamScore\n    ) all_wins\n    GROUP BY teamID\n)\nSELECT\n    t.teamName, t.city,\n    COALESCE(tw.wins, 0) AS total_wins,\n    RANK() OVER (ORDER BY COALESCE(tw.wins, 0) DESC) AS league_rank\nFROM team t\nLEFT JOIN TeamWins tw ON t.teamID = tw.teamID\nORDER BY league_rank ASC;",
-    "crumbs": [
-      "Data Exploration",
-      "Baseball Analytics Engine — Queries"
-    ]
+    "text": "League Rankings with CTEs\nA CTE aggregates wins across home and away games, then RANK() orders the whole league by performance.\nWITH TeamWins AS (\n    SELECT teamID, COUNT(*) AS wins\n    FROM (\n        SELECT homeTeamID AS teamID FROM game WHERE homeTeamScore &gt; awayTeamScore\n        UNION ALL\n        SELECT awayTeamID AS teamID FROM game WHERE awayTeamScore &gt; homeTeamScore\n    ) all_wins\n    GROUP BY teamID\n)\nSELECT\n    t.teamName, t.city,\n    COALESCE(tw.wins, 0) AS total_wins,\n    RANK() OVER (ORDER BY COALESCE(tw.wins, 0) DESC) AS league_rank\nFROM team t\nLEFT JOIN TeamWins tw ON t.teamID = tw.teamID\nORDER BY league_rank ASC;"
   },
   {
     "objectID": "Cleansing_Exploration/project1.html#other-angles-explored",
     "href": "Cleansing_Exploration/project1.html#other-angles-explored",
     "title": "Baseball Analytics Engine — Query Layer",
     "section": "Other Angles Explored",
-    "text": "Other Angles Explored\n\nRBI efficiency per hit — SUM(rbi) / SUM(hits) per player, filtered to players with a meaningful sample size\nBallpark run averages — average combined runs per game, grouped by venue",
-    "crumbs": [
-      "Data Exploration",
-      "Baseball Analytics Engine — Queries"
-    ]
+    "text": "Other Angles Explored\n\nRBI efficiency per hit — SUM(rbi) / SUM(hits) per player, filtered to players with a meaningful sample size\nBallpark run averages — average combined runs per game, grouped by venue"
   },
   {
     "objectID": "Cleansing_Exploration/project1.html#links",
     "href": "Cleansing_Exploration/project1.html#links",
     "title": "Baseball Analytics Engine — Query Layer",
     "section": "Links",
-    "text": "Links\n\nFull source",
-    "crumbs": [
-      "Data Exploration",
-      "Baseball Analytics Engine — Queries"
-    ]
+    "text": "Links\n\nFull source"
   },
   {
     "objectID": "ml.html",
     "href": "ml.html",
     "title": "Machine Learning",
     "section": "",
-    "text": "Machine Learning\nI’m most interested in ML when it’s driving something live and interactive rather than sitting in a notebook. The project below uses a pretrained pose-estimation model to give real-time biomechanical feedback from a webcam feed.\n\nSwingOS — real-time pose tracking for baseball swing mechanics, built with OpenCV and MediaPipe\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Machine Learning"
-    ]
+    "text": "Machine Learning\nI’m most interested in ML when it’s driving something live and interactive rather than sitting in a notebook. The project below uses a pretrained pose-estimation model to give real-time biomechanical feedback from a webcam feed.\n\nSwingOS — real-time pose tracking for baseball swing mechanics, built with OpenCV and MediaPipe\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "Machine_Learning/project3.html",
@@ -240,55 +165,35 @@
     "href": "Machine_Learning/project1.html",
     "title": "SwingOS",
     "section": "",
-    "text": "SwingOS is a real-time computer vision tool that watches a baseball swing through a webcam and gives instant feedback on head movement — one of the most common mechanical breakdowns in hitting. I built it to see if I could train my body to feel correct mechanics without needing a coach standing there watching every rep.\nStack: Python, OpenCV, MediaPipe",
-    "crumbs": [
-      "Machine Learning",
-      "SwingOS"
-    ]
+    "text": "SwingOS is a real-time computer vision tool that watches a baseball swing through a webcam and gives instant feedback on head movement — one of the most common mechanical breakdowns in hitting. I built it to see if I could train my body to feel correct mechanics without needing a coach standing there watching every rep.\nStack: Python, OpenCV, MediaPipe"
   },
   {
     "objectID": "Machine_Learning/project1.html#overview",
     "href": "Machine_Learning/project1.html#overview",
     "title": "SwingOS",
     "section": "",
-    "text": "SwingOS is a real-time computer vision tool that watches a baseball swing through a webcam and gives instant feedback on head movement — one of the most common mechanical breakdowns in hitting. I built it to see if I could train my body to feel correct mechanics without needing a coach standing there watching every rep.\nStack: Python, OpenCV, MediaPipe",
-    "crumbs": [
-      "Machine Learning",
-      "SwingOS"
-    ]
+    "text": "SwingOS is a real-time computer vision tool that watches a baseball swing through a webcam and gives instant feedback on head movement — one of the most common mechanical breakdowns in hitting. I built it to see if I could train my body to feel correct mechanics without needing a coach standing there watching every rep.\nStack: Python, OpenCV, MediaPipe"
   },
   {
     "objectID": "Machine_Learning/project1.html#how-it-works",
     "href": "Machine_Learning/project1.html#how-it-works",
     "title": "SwingOS",
     "section": "How It Works",
-    "text": "How It Works\nMediaPipe’s pretrained pose-landmark model tracks 33 body landmarks per frame in real time. The app pulls out just the nose landmark as a proxy for head position, lets the user lock in an anchor point (S key), and then continuously compares the live head position against that anchor.\nif key == ord('s'):\n    if results.pose_landmarks:\n        nose = results.pose_landmarks.landmark[mp_pose.PoseLandmark.NOSE]\n        head_anchor_y = nose.y\n        status = \"ANCHOR SET - STAY LEVEL\"\n\nif head_anchor_y is not None:\n    current_nose_y = results.pose_landmarks.landmark[mp_pose.PoseLandmark.NOSE].y\n    diff = int(head_anchor_y * h) - int(current_nose_y * h)\n    if abs(diff) &gt; 20:\n        status = \"WATCH YOUR HEAD!\" if diff &lt; 0 else \"STAY DOWN!\"\n    else:\n        status = \"SOLID\"\nA green line marks the anchor, a red line marks the current head position, and a status banner tells the hitter to adjust in real time — no delay, no reviewing footage after the fact.",
-    "crumbs": [
-      "Machine Learning",
-      "SwingOS"
-    ]
+    "text": "How It Works\nMediaPipe’s pretrained pose-landmark model tracks 33 body landmarks per frame in real time. The app pulls out just the nose landmark as a proxy for head position, lets the user lock in an anchor point (S key), and then continuously compares the live head position against that anchor.\nif key == ord('s'):\n    if results.pose_landmarks:\n        nose = results.pose_landmarks.landmark[mp_pose.PoseLandmark.NOSE]\n        head_anchor_y = nose.y\n        status = \"ANCHOR SET - STAY LEVEL\"\n\nif head_anchor_y is not None:\n    current_nose_y = results.pose_landmarks.landmark[mp_pose.PoseLandmark.NOSE].y\n    diff = int(head_anchor_y * h) - int(current_nose_y * h)\n    if abs(diff) &gt; 20:\n        status = \"WATCH YOUR HEAD!\" if diff &lt; 0 else \"STAY DOWN!\"\n    else:\n        status = \"SOLID\"\nA green line marks the anchor, a red line marks the current head position, and a status banner tells the hitter to adjust in real time — no delay, no reviewing footage after the fact."
   },
   {
     "objectID": "Machine_Learning/project1.html#why-it-matters",
     "href": "Machine_Learning/project1.html#why-it-matters",
     "title": "SwingOS",
     "section": "Why It Matters",
-    "text": "Why It Matters\nThis is applied ML in the sense that matters to me most: taking a general-purpose pretrained model (pose estimation) and wiring it into a tight feedback loop that solves a specific, real problem. The interesting part isn’t training a model — it’s turning model output into a signal a person can actually act on in the half-second it takes to swing a bat.",
-    "crumbs": [
-      "Machine Learning",
-      "SwingOS"
-    ]
+    "text": "Why It Matters\nThis is applied ML in the sense that matters to me most: taking a general-purpose pretrained model (pose estimation) and wiring it into a tight feedback loop that solves a specific, real problem. The interesting part isn’t training a model — it’s turning model output into a signal a person can actually act on in the half-second it takes to swing a bat."
   },
   {
     "objectID": "Machine_Learning/project1.html#links",
     "href": "Machine_Learning/project1.html#links",
     "title": "SwingOS",
     "section": "Links",
-    "text": "Links\n\nFull source",
-    "crumbs": [
-      "Machine Learning",
-      "SwingOS"
-    ]
+    "text": "Links\n\nFull source"
   },
   {
     "objectID": "resume.html",
@@ -358,20 +263,14 @@
     "href": "exploration.html",
     "title": "Data Exploration",
     "section": "",
-    "text": "Data Exploration\nOnce data is clean, the next step is asking it questions. The project below digs into a normalized baseball database using window functions and CTEs to surface trends a flat query couldn’t easily show.\n\nBaseball Analytics Engine — Query Layer — rolling averages, RBI efficiency, and league rankings pulled out of a relational baseball database\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Data Exploration"
-    ]
+    "text": "Data Exploration\nOnce data is clean, the next step is asking it questions. The project below digs into a normalized baseball database using window functions and CTEs to surface trends a flat query couldn’t easily show.\n\nBaseball Analytics Engine — Query Layer — rolling averages, RBI efficiency, and league rankings pulled out of a relational baseball database\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "cleansing.html",
     "href": "cleansing.html",
     "title": "Data Cleansing",
     "section": "",
-    "text": "Data Cleansing\nBefore any analysis is useful, the underlying data has to be structured, normalized, and free of contradictions. The project below shows how I take raw records and design them into a clean, reliable schema.\n\nBaseball Analytics Engine — a normalized MySQL schema built from raw player, team, and game data\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Data Cleansing"
-    ]
+    "text": "Data Cleansing\nBefore any analysis is useful, the underlying data has to be structured, normalized, and free of contradictions. The project below shows how I take raw records and design them into a clean, reliable schema.\n\nBaseball Analytics Engine — a normalized MySQL schema built from raw player, team, and game data\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "Machine_Learning/project2.html",
@@ -392,10 +291,7 @@
     "href": "story_telling.html",
     "title": "Story Telling",
     "section": "",
-    "text": "Story Telling\nThis section is for projects focused on communicating findings clearly — visualizations and narratives that make data make sense to someone who wasn’t in the room when it was analyzed. Nothing here yet; check back as I finish a project that fits.\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Story Telling"
-    ]
+    "text": "Story Telling\nThis section is for projects focused on communicating findings clearly — visualizations and narratives that make data make sense to someone who wasn’t in the room when it was analyzed. Nothing here yet; check back as I finish a project that fits.\n\n\n\n\n Back to top"
   },
   {
     "objectID": "Cleansing_Exploration/project2.html",
@@ -437,9 +333,6 @@
     "href": "full_stack.html",
     "title": "Full Stack",
     "section": "",
-    "text": "Full Stack\nThese projects span the whole pipeline — pulling data from an external API, storing and modeling it, running analysis on top, and surfacing it through an interactive interface.\n\nCanvas-Risk — a Canvas LMS integration with a SQLite-backed data layer, a weighted risk-scoring engine, and a live terminal dashboard\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Full Stack"
-    ]
+    "text": "Full Stack\nThese projects span the whole pipeline — pulling data from an external API, storing and modeling it, running analysis on top, and surfacing it through an interactive interface.\n\nCanvas-Risk — a Canvas LMS integration with a SQLite-backed data layer, a weighted risk-scoring engine, and a live terminal dashboard\n\n\n\n\n\n Back to top"
   }
 ]
