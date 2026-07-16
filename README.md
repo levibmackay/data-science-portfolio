@@ -45,3 +45,5 @@ git push
 ```
 
 GitHub Pages serves from `/docs` on `main`.
+
+_Last updated: 2026-07-16_
