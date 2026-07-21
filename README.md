@@ -47,3 +47,5 @@ git push
 GitHub Pages serves from `/docs` on `main`.
 
 _Last updated: 2026-07-16_
+
+_Last reviewed: 2026-07-20 19:33 MDT_
